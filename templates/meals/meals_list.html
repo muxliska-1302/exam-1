@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Meals</title>
+</head>
+<body>
+<h1>Meal Management</h1>
+<h2>Create New Meal</h2>
+<form method="get">
+    <label for="name">Meal Name:</label>
+    <br>
+    <input type="text" id="name" name="name">
+    <br><br>
+    <label for="ingredients">Ingredients:</label>
+    <br>
+    <textarea id="ingredients" name="ingredients"></textarea>
+    <br><br>
+    <label for="price">Price:</label>
+    <input type="number" step="0.01" id="price" name="price">
+    <br><br>
+    <label for="meal_type">Type:</label>
+    <br><br>
+    <select id="meal_type" name="type">
+        <option value="Select Type">Select Type</option>
+        <option value="Appetizer">Appetizer</option>
+        <option value="Main Course">Main Course</option>
+        <option value="Dessert">Dessert</option>
+    </select>
+    <br><br>
+    <label for="cuisine">Cuisine</label>
+    <br>
+    <input type="text" id="cuisine" name="cuisine">
+    <br><br>
+
+    <input type="submit" value="Create Meal">
+    <br><br>
+</form>
+<h2>Meal List</h2>
+<table border="1">
+    <thead>
+    <tr>
+        <th>Name</th>
+        <th>Ingredients</th>
+        <th>Price</th>
+        <th>Type</th>
+        <th>Cuisine</th>
+    </tr>
+    </thead>
+</table>
+</body>
+</html>

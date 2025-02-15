@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Taxi Management</title>
+</head>
+<body>
+<h1>Taxi Management</h1>
+<h2>Create New Taxi</h2>
+<form method="get">
+    <label for="taxi_name">Taxi Name:</label>
+    <br>
+    <input type="text" id="taxi_name" name="taxi_name">
+    <br><br>
+    <label for="license_plate">License Plate:</label>
+    <br>
+    <input type="text" id="license_plate" name="license_plate">
+    <br><br>
+    <label for="driver_name">Driver Name:</label>
+    <br>
+    <input type="text" id="driver_name" name="driver_name">
+    <br><br>
+    <label for="passenger_capacity">Passenger Capacity:</label>
+    <br>
+    <input type="number" id="passenger_capacity" name="passenger_capacity">
+    <br><br>
+    <label for="car_model">Car Model:</label>
+    <br>
+    <input type="text" id="car_model" name="car_model">
+    <br><br>
+    <label for="status">Status:</label>
+    <br>
+    <select id="status" name="status">
+        <option value="Select Status">Select Status</option>
+        <option value="Available">Available:</option>
+        <option value="Busy">Busy</option>
+        <option value="Under Maintenance">Under Maintenance</option>
+    </select>
+    <br><br>
+    <input type="submit" value="Create Taxi">
+    <br><br>
+</form>
+<h2>Taxi List</h2>
+<table border="1">
+    <thead>
+    <tr>
+        <th>Taxi Name</th>
+        <th>License Plate</th>
+        <th>Driver</th>
+        <th>Capacity</th>
+        <th>Model</th>
+        <th>Status</th>
+    </tr>
+    </thead>
+</table>
+</body>
+</html>
